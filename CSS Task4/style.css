@@ -1,0 +1,73 @@
+*{
+    margin:0;padding:0;
+}
+
+body
+{
+    background-color: green;
+
+}
+
+.parent
+{
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.column
+{
+    display: flex;
+    flex-direction: row;
+
+    border: 2px solid white;
+    width:100%;
+    position: relative;
+    
+    margin: 28px 15px;
+
+}
+
+.content1 img
+{
+    position: absolute;
+    width:50%;
+    height:313px;
+    z-index: -1;
+}
+
+.content2 .para
+{
+    color:white;
+    padding: 100px 0;
+}
+
+.content1 h1
+{
+    color: white;
+    z-index: 9; 
+    margin: 0 80px;
+    padding-left: 120px;
+}
+
+
+.my_button
+{
+    background-color: brown;
+    border-radius: 30px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0 11px;
+}
+
