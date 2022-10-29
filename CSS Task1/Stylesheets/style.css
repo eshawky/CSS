@@ -1,0 +1,15 @@
+body {
+  margin: 100px;
+  width: 1000px;
+  padding: 10px;
+}
+
+.links.a
+{
+  text-decoration-line:;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
