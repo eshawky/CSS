@@ -1,0 +1,96 @@
+.header 
+{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    background-color: red;
+    height: 100px;    
+    position: fixed;
+    width: 100%;
+}
+
+.link-container
+{
+    text-align:center;
+    padding-top: 40px;
+
+}
+.header a
+{
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+    
+}
+
+.header a:hover 
+{
+    color: #F8F8F8;
+}
+
+
+.main
+{
+    background-image: url("../Images/back.jpeg");
+    padding-top: 350px;
+    height:450px;
+    width: 100%;
+
+
+}
+
+.main h1
+{
+    color: rgba(228, 208, 29, 0.442);
+    padding-left: 30px;
+}
+
+.main p
+{
+    color: rgba(228, 208, 29, 0.442);
+    padding-left: 30px;
+}
+
+
+.footer 
+{
+    
+    background-color: rgba(228, 208, 29, 0.442);
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    
+}
+
+button
+{
+    cursor: pointer;
+    text-decoration-line: none;
+    background-color: #b33535;
+    font-size: 15px;
+    padding-top: 0px;
+    width: 90px;
+    height: 40px;
+    border-radius: 15px; 
+    border: none;
+    margin-top: 15px;
+    
+}
+
+button:hover 
+{
+    background-color: black;
+}
+
+#menulist
+{
+    text-align: center;
+}
+
+button a
+{
+    text-decoration: none;
+    color: white;
+}
+
