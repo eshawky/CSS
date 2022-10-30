@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CSS Task 7</title>
+        <link rel="stylesheet" type="text/css" href="Stylesheets/style.css">
+
+        <script>
+
+            function changeColor()
+            {
+                let colorArray="#";
+
+                for (let i = 0; i < 6; i++) 
+                {
+                    
+                    let color        = Math.floor(Math.random()* 16);
+
+                    let color_hexa   = color.toString(16);
+
+                    colorArray = colorArray + color_hexa;
+                    
+                }
+
+                document.body.style.backgroundColor = colorArray;
+ 
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <button onclick="changeColor()">Click to change the color</button>
+          
+    </body>
+
+</html>

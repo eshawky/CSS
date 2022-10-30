@@ -1,0 +1,20 @@
+body
+{
+    background-color: white;
+}
+
+button
+{
+
+    background-color: red;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+
+}
+
+button:hover
+{
+    background-color: black;
+}
