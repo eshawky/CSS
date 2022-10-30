@@ -1,0 +1,232 @@
+.top
+{
+    display: flex;
+    flex-direction: column;
+
+    width:100%;
+    height:500px;
+    
+    background-image: url("../Images/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header 
+{
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+   
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 150px;
+
+    height: 80px;
+}
+
+.header .logo
+{
+    float: left;
+    margin-left:30px;
+    margin-top:30px;
+    
+    color: brown;
+
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+}
+
+.header .nav-bar
+{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    height:100%;
+
+}
+
+.header .nav-bar a
+{
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    
+}
+
+.header .nav-bar a:hover
+{
+    color: brown;
+    
+}
+
+.header .nav-bar .item2
+{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    Border: none;
+    box-shadow: none;
+    box-shadow:0 1px 4px rgba(0, 0, 0, .26);
+
+}
+
+.header .nav-bar .item2:hover
+{
+    color: brown;
+}
+
+.big
+{
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    margin:0;padding:0;
+}
+
+body
+{
+    background-color: black;
+}
+
+.middle
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.divvv
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.divvv h1
+{
+    color: white;
+    background-color: black;
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+
+    border: 2px solid white;
+    width:100%;
+    position: relative;
+    
+    margin: 28px 15px;
+    border-radius: 5px;
+
+}
+
+.content1 img
+{
+    position: absolute;
+    width:310px;
+    height:100%;
+    z-index: -1;
+}
+
+.content1 h1
+{
+    color: white;
+    background-color: brown;
+    padding-left:10px;
+
+    z-index: 9; 
+    margin: 0 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;  
+    padding-bottom: 10px;  
+       
+       
+}
+
+.content2 h1
+{
+    color: brown;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+.content2 .para
+{
+    color:white;
+    padding: 100px 0;
+}
+
+.content2 .my_button
+{
+    background-color: brown;
+    border-radius: 30px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0 11px;
+
+    width:150px;
+    height: 30px;
+}
+
+.content2 .my_button:hover
+{
+    color: black;
+}
+.footer 
+{
+    
+    background-color: rgba(128, 128, 128, 0.645);
+    background-image: url("../Images/footer3.png");
+    background-size: cover;
+
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    
+}
+
+.footer button
+{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: brown;
+    font-size: 15px;
+    
+    width: 10%;
+    height: 50px;
+    margin-top: 70px;
+    margin-right: 70px;
+
+    border-radius: 15px; 
+    border: none;
+    
+}
+
+.footer button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.footer button a:hover
+{
+    color: black;
+}
