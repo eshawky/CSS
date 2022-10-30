@@ -1,0 +1,757 @@
+:root
+{
+	/*Define Global Variables*/
+	--color1: black;
+	--color2:red; /*#a4f4f9 #ff91a4 */
+	--color3: white; /*#ec05f4;*/
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body 
+{
+	font-family: 'helvetica_ce_55_romanregular';
+    display: flex;
+    flex-direction: column;
+
+    width:100%;
+    height:500px;
+    
+	background-color: var(--color1);
+
+}
+
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+.header 
+{
+    display: flex;
+	justify-content: space-between;
+
+	background-color: var(--color3);
+    font-size: 20px;
+    text-align: center;
+   
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 150px;
+
+    height: 80px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+	padding-right: 20px;
+
+}
+
+.header .logo
+{
+	margin-left:30px;
+	padding-top: 20px;
+    color: var(--color2);
+	height: 100%;
+    
+}
+
+
+.header .nav-bar
+{
+    display: flex;
+    justify-content: center;
+    
+	padding-top: 20px;
+    padding-bottom: 10px;
+	align-items: center;
+	text-align: left;
+
+}
+
+.header .nav-bar a
+{
+    text-decoration: none;
+    color: var(--color2);
+    padding-left: 30px;
+	padding-right: 20px;
+	height: 100%;
+
+    
+}
+
+.header .nav-bar a:hover
+{
+    cursor: pointer;
+	color: var(--color1);
+	background-color: var(--color2);
+	align-items: center;
+	padding-top: 15px;
+
+	border-radius: 5px;	
+	border:  20px solid var(--color2);
+	
+}
+
+
+.contactMe
+{
+
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color3);
+    font-size: 20px;
+    text-align: center;
+   
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 150px;
+
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding-right: 20px;
+
+	height: 120%;
+
+
+}
+
+.contactMe h1
+{
+	font-size: 20px;
+	color: var(--color1);
+	background-color: var(--color2);
+
+	
+	width:100%;
+	height: 50px;
+
+
+	text-align: center;
+	align-items: center;
+	
+	padding-left: 20px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+
+}
+
+.contactMe h1:hover
+{
+	box-shadow: 5px 5px 0px var(--color1);
+}
+
+
+.contactMe .contacts
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.contactMe .contacts .myForm
+{
+	border:  2px solid var(--color1);
+	margin-bottom: 15px;
+	width: 30%;
+
+}
+
+.contactMe .contacts .myForm:hover
+{
+	box-shadow: 0 0 3px black;
+  	margin-top: 10px;
+
+}
+
+.contactMe .contacts .myForm form
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-left: 10px;
+	margin-bottom: 20px;
+
+}
+.contactMe .contacts .myForm form label
+{
+	text-align: left;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: var(--color1);
+}
+
+.contactMe .contacts.myForm form input
+{
+	text-align: left;
+	padding: 20px;
+	width: 300px;
+	margin-right: 20px;
+
+}
+
+.contactMe .contacts .myForm form textarea 
+{
+	width: 320px;
+	height: 150px;
+}
+
+.contactMe .contacts .myForm form button
+{
+    cursor: pointer;
+    text-decoration-line: none;
+	color: var(--color1);
+    background-color: var(--color2);
+    
+	font-size: 20px;
+    text-align: center;
+    
+	border-radius: 15px; 
+    border: none;
+    border-radius: 15px;
+    
+
+    width:150px;
+    height:50px;
+	
+	margin-top: 10px;
+	margin-left:90px;
+}
+
+.contactMe .contacts .myForm form button:hover
+{
+	color: var(--color2);
+    background-color: var(--color1);
+}
+
+.contactMe .contacts .myAddress
+{
+	border:  2px solid var(--color1);
+	margin-bottom: 15px;
+	width: 30%;
+
+}
+
+.contactMe .contacts .myAddress:hover
+{
+	box-shadow: 0 0 3px black;
+  	margin-top: 10px;
+
+}
+
+.contactMe .contacts .myAddress p
+{
+	text-align: left;
+	padding: 10px;
+
+}
+
+.contactMe .contacts .myAddress p.title
+{
+	color: var(--color1);
+	text-align: center;
+	font-size: 25px;
+
+
+}
+.contactMe .contacts .myAddress p.details
+{
+	color: var(--color2);
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.contactMe .contacts .myLocation
+{
+	border:  2px solid var(--color1);
+	margin-bottom: 15px;
+	width: 30%;
+
+
+}
+
+.contactMe .contacts .myLocation:hover
+{
+	box-shadow: 0 0 3px black;
+  	margin-top: 10px;
+
+}
+
+.contactMe .contacts .myLocation .gmap_canvas
+{
+	margin: auto;
+	overflow:hidden;
+	background:none!important;
+	height:320px;
+	width:350px;
+	padding-top:50px;
+	padding-right: 10px;
+
+}
+
+.mySkills
+{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color3);
+	
+    font-size: 20px;
+    text-align: center;
+   
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 150px;
+
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+	padding-right: 20px;
+
+}
+
+.mySkills h1
+{
+	font-size: 20px;
+	color: var(--color1);
+	background-color: var(--color2);
+	
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+	width:100%;
+	height: 50px;
+
+	text-align: center;
+	align-items: center;
+	
+	padding-left: 20px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+
+}
+
+.mySkills h1:hover
+{
+	box-shadow: 5px 5px 0px var(--color1);
+}
+
+.mySkills .content
+{
+	display: flex;
+	flex-direction: row;
+	background-color: var(--color3);
+	width: 100%;
+
+}
+
+.mySkills .content .left
+{
+	width: 30%;
+}
+
+.mySkills .content .right
+{
+	width: 70%;
+}
+
+.mySkills .content .left img
+{
+	width: 80%;
+	height: 95%;
+	border-radius: 5px;
+	padding-bottom: 5px;
+
+	animation: moooove 3s infinite;
+
+}
+
+.mySkills .content .right
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.mySkills .content .right button
+{
+
+	background-color: var(--color1);
+	width: auto;
+	height:40px;
+	padding:5px;
+	margin: 10px;
+}
+
+.mySkills .content .right a
+{ 
+	text-decoration: none;
+	color: var(--color3);
+
+}
+
+.education
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	
+}
+
+.education p.title
+{
+	margin: 5px;
+	font-weight: bold;
+}
+
+.education .title:hover
+{
+	text-decoration: underline;
+	text-decoration-color: var(--color2);
+}
+
+.education .details
+{
+	margin: 10px;
+}
+
+
+.education .education1
+{
+	border:  2px solid var(--color1);
+	margin-bottom: 15px;
+	width: 30%;
+}
+
+.education .education1:hover
+{
+	box-shadow: 0 0 3px black;
+  	margin-top: 10px;
+}
+
+.education .education2
+{
+	border:  2px solid var(--color1);
+	margin-bottom: 15px;
+	width: 30%;
+}
+
+.education .education2:hover
+{
+	box-shadow: 0 0 3px black;
+  	margin-top: 10px;
+}
+.education .education3
+{
+	border:  2px solid var(--color1);
+	margin-bottom: 15px;
+	width: 30%;
+}
+
+.education .education3:hover
+{
+	box-shadow: 0 0 3px black;
+  	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.myProjects
+{
+
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color3);
+	
+    font-size: 20px;
+    text-align: center;
+   
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 150px;
+
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+	padding-right: 20px;
+
+
+}
+
+.myProjects h1
+{
+	font-size: 20px;
+	color: var(--color1);
+	background-color: var(--color2);
+	
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+	width:100%;
+	height: 50px;
+
+	text-align: center;
+	align-items: center;
+	
+	padding-left: 20px;
+	padding-top: 20px;
+
+	margin-bottom: 10px;
+	width: 100%;
+
+}
+
+.myProjects h1:hover
+{
+	box-shadow: 5px 5px 0px var(--color1);
+}
+
+.myProjects .projects
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width:100%;
+}
+
+.myProjects .projects .project
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+	border:  2px solid var(--color1);
+	margin-bottom: 15px;
+	width: 30%;
+	height: 200px;
+}
+
+.myProjects .projects .project p
+{
+	width: 95%;
+	border-radius: 0px;
+	background-color: var(--color3);
+}
+
+.myProjects .projects .project  img
+{
+	width:100px;
+	height:100px;
+	border-radius: 15px;
+	margin: auto;
+	padding-left: 20px;
+	border-radius: 10px;
+}
+
+.myProjects .projects .project .project-content
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.myProjects .projects .project .project-content .project-head
+{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 30px;
+	padding: 5px;
+
+
+}
+
+.myProjects .projects .project .project-content .project-details
+{
+	text-align: left;
+	font-size: 15px;
+	padding-left:5px;
+	padding-top: 5px;
+	align-items: center;
+
+}
+
+.footer
+{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	background-image: url("../Images/header1.png");
+	background-size: cover;
+
+    font-size: 20px;
+    text-align: center;
+   
+	padding-right: 20px;
+	width:80%;
+	height: 5000px;
+	margin: auto;
+
+    margin-top: 50px;
+    margin-left: 150px;
+
+}
+
+.footer .top
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+	padding-top: 50px;
+	margin-left: 20px;
+
+}
+
+.footer .bottom
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	margin-bottom: 100px;
+	margin-left: 20px;
+	
+}
+
+.footer .top .title
+{
+	padding-top: 50px;
+	padding-right: 250px;
+	/*border-right: 1px solid;*/
+
+}
+
+.footer .top .links
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+}
+
+.footer .top .links a
+{
+	text-decoration: none;
+	cursor:pointer;
+	color: var(--color3);
+
+}
+
+.footer .top .links button
+{
+	background-color: var(--color1);
+	width: auto;
+	height:auto;
+	padding:10px;
+	
+	border:  20px solid var(--color2);
+
+}
+
+.footer .bottom .copyrights
+{
+	padding-top: 50px;
+	padding-right: 78px;
+	/*border-right: 1px solid;*/
+
+}
+
+.footer .design
+{
+	padding-top: 50px;
+	padding-left: 0px;
+	margin: auto;
+
+}
+
+.fa:hover, .fa:focus, .fa:active 
+{
+	animation: faaaa 1s infinite;
+}
+
+
+/*Animations */
+@keyframes moooove 
+{
+	0% 
+	{
+	  opacity: 0.5;
+	}
+	30% 
+	{
+	  opacity: 1;
+	}
+	60% 
+	{
+	  box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+	  opacity: 0;
+	}
+	100% 
+	{
+	  opacity: .5;
+	}
+  }
+
+
+@keyframes faaaa 
+{
+	25% 
+	{
+			 transform: scale(1.1);
+	}
+	75% 
+	{
+			 transform: scale(0.9);
+	}
+
+}
+
+
+
+/*Font awsome*/  
+.fa
+{
+	font-size: 50px;
+	color: var(--color3);
+	margin:30px;
+}
+
+.fa-envelope
+{
+	font-size: 20px;
+	color: var(--color2);
+}
+
+.fa-eye
+{
+	font-size: 30px;
+	color: var(--color1);
+}
+
+.proj .fa-github
+{
+	font-size: 20px;
+	color: var(--color2);
+}
